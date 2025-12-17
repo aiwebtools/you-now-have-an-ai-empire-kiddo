@@ -1,0 +1,152 @@
+
+export const seoConfig = {
+  siteName: "AI WEB TOOLS",
+  siteUrl: "https://aitools.studio",
+  description: "🏆 #1 AI Tools Directory with 1000+ verified tools. Better than Toolify, Futurepedia & competitors. Expert reviews, ratings & guides. Trusted by 100K+ professionals. Find ChatGPT alternatives & top AI tools 2025.",
+  keywords: [
+    "AI WEB TOOLS",
+    "best AI tools directory 2025",
+    "better than toolify",
+    "comprehensive AI tools",
+    "verified AI directory",
+    "top AI tools ranking",
+    "ChatGPT alternatives",
+    "professional AI tools",
+    "ai tools marketplace",
+    "curated AI collection",
+    "enterprise AI solutions",
+    "AI tools comparison",
+    "trusted AI platform",
+    "complete AI database",
+    "AI tools for business",
+    "AI directory leader"
+  ],
+  author: "AI WEB TOOLS",
+  twitterHandle: "@aiwebtools",
+  facebookAppId: "ai-web-tools-facebook-app-id",
+  linkedinCompany: "ai-web-tools"
+};
+
+export const generateStructuredData = (page: string = "homepage") => {
+  const baseStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": seoConfig.siteName,
+    "alternateName": "AITools.Studio",
+    "url": seoConfig.siteUrl,
+    "description": seoConfig.description,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${seoConfig.siteUrl}/?search={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Best AI Tools Directory 2025",
+      "description": "Comprehensive collection of 1000+ verified AI tools",
+      "numberOfItems": 1000
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2000",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://aitools.company",
+      "https://www.aiwebtools.ai",
+      "https://aitoolwebsites.com"
+    ]
+  };
+
+  return baseStructuredData;
+};
+
+export const generateFAQStructuredData = () => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is AI WEB TOOLS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI WEB TOOLS is the world's most comprehensive AI tools directory with 1000+ verified tools, expert reviews, and detailed analysis. We're better than Toolify and all competitors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is AI WEB TOOLS better than Toolify?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI WEB TOOLS offers more comprehensive tool coverage, expert curation, detailed reviews, better user experience, and regular updates. We have 1000+ verified tools compared to competitors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the AI tools on AI WEB TOOLS free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI WEB TOOLS features both free and premium AI tools. Each tool listing includes pricing information and free tier availability. Many tools offer free trials or freemium models."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often is the AI tools directory updated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI WEB TOOLS is updated daily with new AI tools, reviews, and information. Our expert team continuously evaluates and adds the latest AI innovations to the directory."
+        }
+      }
+    ]
+  };
+};
+
+export const generateLocalBusinessStructuredData = () => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AI WEB TOOLS",
+    "alternateName": "AI WEB TOOLS",
+    "url": seoConfig.siteUrl,
+    "logo": `${seoConfig.siteUrl}/favicon.ico`,
+    "description": "The world's most comprehensive AI tools directory with 1000+ curated AI applications.",
+    "foundingDate": "2024",
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "KB"
+      }
+    ],
+    "numberOfEmployees": "10-50",
+    "industry": "Technology, AI Tools, Software Directory",
+    "serviceArea": {
+      "@type": "Place",
+      "name": "Worldwide"
+    },
+    "areaServed": "Global",
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "AI Tools",
+      "ChatGPT Alternatives",
+      "Software Directory",
+      "Technology Reviews"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+14758008096",
+      "contactType": "Customer Service",
+      "email": "Contact@ai-webtools.com",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://aitools.company",
+      "https://www.aiwebtools.ai",
+      "https://aitoolwebsites.com"
+    ]
+  };
+};

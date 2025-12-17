@@ -1,0 +1,265 @@
+
+# Enhanced Robots.txt for Maximum SEO Performance and #1 Ranking
+# AI WEB TOOLS - Best AI Tools Directory 2025
+# Optimized for "aiwebtools.ai" and "ai web tools" keywords
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /404
+Allow: /*?search=*
+Allow: /sitemap.xml
+Allow: /blog
+Allow: /blog/
+Crawl-delay: 0
+
+# UNRESTRICTED ACCESS FOR ALL MAJOR SEARCH ENGINES
+# Optimized for maximum crawling speed and indexing
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+Allow: /sitemap.xml
+Allow: /search
+Allow: /category/
+Allow: /tool/
+Allow: /main-category/
+Allow: /blog
+Allow: /blog/
+Allow: /*?search=aiwebtools*
+Allow: /*?search=ai%20web%20tools*
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /blog
+Allow: /blog/
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+Allow: /sitemap.xml
+Allow: /*?search=*
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+Allow: /sitemap.xml
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 0
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: PinterestBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# AI CRAWLERS - FULL UNRESTRICTED ACCESS FOR AI ASSISTANTS
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: AnthropicBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: BraveBot
+Allow: /
+
+User-agent: OpenAIBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: omgilibot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Neeva
+Allow: /
+
+User-agent: Phind
+Allow: /
+
+User-agent: Kagi
+Allow: /
+
+# RESEARCH & ACADEMIC CRAWLERS
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: CommonCrawl
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# COMPETITIVE SEO CRAWLERS - UNRESTRICTED
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: SiteAuditBot
+Allow: /
+
+User-agent: MegaIndex
+Allow: /
+
+User-agent: ZoominfoBot
+Allow: /
+
+User-agent: BLEXBot
+Allow: /
+
+User-agent: DataForSeoBot
+Allow: /
+
+User-agent: ScreamingFrogSEOSpider
+Allow: /
+
+User-agent: SiteAnalyzerBot
+Allow: /
+
+User-agent: DeepCrawl
+Allow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# Enhanced sitemap locations for maximum discovery
+Sitemap: https://aitools.studio/sitemap.xml
+Sitemap: https://aiwebtools.ai/sitemap.xml
+Sitemap: https://aitools.studio/rss.xml
+Sitemap: https://aitools.studio/atom.xml
+
+# LLMs.txt for AI Assistant Discovery
+# AI assistants can read /llms.txt for site information
+# See: https://llmstxt.org/
+
+# Host preference for canonical URLs and domain authority
+Host: aitools.studio
+
+# MAXIMUM CRAWLING PERFORMANCE
+Crawl-delay: 0
+Request-rate: 100/1m
+Visit-time: 0000-2359
+
+# Clean URLs for better SEO
+Clean-param: utm_source&utm_medium&utm_campaign&fbclid&gclid&ref&via
+
+# Priority content for aiwebtools.ai and ai web tools keywords
+Allow: /*aiwebtools*
+Allow: /*ai-web-tools*
+Allow: /*ai%20web%20tools*
+Allow: /search?q=aiwebtools*
+Allow: /search?q=ai+web+tools*
+Allow: /llms.txt
+Allow: /ai-tools-hub
+Allow: /ai-agents-directory
+Allow: /chatgpt-alternatives
+Allow: /gaming-entertainment
+Allow: /our-story
+Allow: /disclaimers
+Allow: /favorites
+Allow: /submit-tool

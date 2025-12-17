@@ -1,0 +1,142 @@
+import { Separator } from "@/components/ui/separator";
+import { createTimePortalEffect } from "@/utils/timeEffects";
+import { createConfettiCelebration } from "@/utils/effects/audioEffects";
+import FooterActions from "./footer/FooterActions";
+import FooterCompanyInfo from "./footer/FooterCompanyInfo";
+import FooterLinks from "./footer/FooterLinks";
+import FooterBottom from "./footer/FooterBottom";
+import { Download, Gift } from "lucide-react";
+
+const Footer = () => {
+  const handleRequestTool = () => {
+    const subject = encodeURIComponent('AI Tool Request - New Tool Build');
+    const body = encodeURIComponent(`Hi AI Web Tools Team,
+
+I would like to request a new AI tool to be built for your website.
+
+Tool Details:
+1. What should this AI tool do? (Describe the main functionality)
+   [Your answer here]
+
+2. What category would this tool fit into? (e.g., Writing, Business, Creative, etc.)
+   [Your answer here]
+
+3. Who is the target audience for this tool? (e.g., Students, Professionals, Content Creators, etc.)
+   [Your answer here]
+
+4. Are there any specific features or capabilities you'd like included?
+   [Your answer here]
+
+5. Do you have any examples of similar tools or references?
+   [Your answer here]
+
+6. How would this tool benefit users?
+   [Your answer here]
+
+Additional Information:
+[Any other details or requirements]
+
+Thank you for considering my request!
+
+Best regards,
+[Your name]`);
+    
+    const mailtoUrl = `mailto:contact@ai-webtools.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoUrl;
+    
+    // Also open the Google form
+    setTimeout(() => {
+      createTimePortalEffect("https://docs.google.com/forms/d/e/1FAIpQLSchtKquEqaaKSZM9AWygcY3Uf3uQOpVHZUMayVZMCbDTxfyfQ/viewform?usp=sf_link", "Custom AI Development Request Form");
+    }, 500);
+  };
+
+  const handleExternalLink = (url: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('🌀 External link clicked in footer:', url);
+    createTimePortalEffect(url);
+  };
+
+  // Download 150+ GPT Operational Instructions
+  const handleDownloadGPTInstructions = () => {
+    createConfettiCelebration();
+    setTimeout(() => {
+      const link = document.createElement('a');
+      link.href = '/downloads/gpt-instructions.zip';
+      link.download = 'AIWebTools-150-GPT-Instructions.zip';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      console.log('🎁 Downloaded 150+ GPT Instructions!');
+    }, 500);
+  };
+
+  return (
+    <footer className="bg-black text-cyan-100 py-16 border-t border-cyan-500/30">
+      <div className="container mx-auto px-4">
+        <FooterActions 
+          handleExternalLink={handleExternalLink}
+          handleRequestTool={handleRequestTool}
+        />
+
+        {/* Prominent Clone Website Button */}
+        <div className="flex justify-center mb-16 px-4">
+          <button
+            onClick={(e) => handleExternalLink("https://lovable.dev/projects/6bc45a49-a34b-46a4-9b9d-c50f06b2d957?via=aiwebtools", e)}
+            className="relative px-4 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black font-bold text-sm sm:text-base md:text-lg rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 group overflow-hidden gold-glow interactive-button max-w-[90vw] sm:max-w-none"
+          >
+            {/* Radiating light effect */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 opacity-75 blur-xl animate-pulse"></div>
+            
+            {/* Inner glow */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-200 to-yellow-300 opacity-50 animate-pulse"></div>
+            
+            {/* Button content */}
+            <span className="relative z-10 text-center block leading-tight">
+              <span className="hidden sm:inline">CLONE THIS WEBSITE AND MAKE IT YOUR OWN WITH AI</span>
+              <span className="sm:hidden">CLONE THIS WEBSITE & MAKE IT YOUR OWN</span>
+            </span>
+            
+            {/* Shine effect on hover */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/30 to-transparent transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+          </button>
+        </div>
+
+        {/* Download 150+ GPT Instructions Button */}
+        <div className="flex justify-center mb-16 px-4">
+          <button
+            onClick={handleDownloadGPTInstructions}
+            className="relative px-4 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600 text-white font-bold text-sm sm:text-base md:text-lg rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-purple-400/50 group overflow-hidden max-w-[90vw] sm:max-w-none"
+          >
+            {/* Animated background shine */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+            
+            {/* Pulsing glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 opacity-50 blur-xl animate-pulse"></div>
+            
+            {/* Button content */}
+            <span className="relative z-10 flex items-center justify-center gap-2 sm:gap-3 leading-tight flex-wrap">
+              <Gift className="w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
+              <span className="text-center">
+                <span className="hidden sm:inline">🎁 FREE GIFT: DOWNLOAD 150+ CUSTOM GPT INSTRUCTIONS</span>
+                <span className="sm:hidden">🎁 FREE: 150+ GPT INSTRUCTIONS</span>
+              </span>
+              <Download className="w-5 h-5 sm:w-6 sm:h-6 animate-pulse" />
+            </span>
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <FooterCompanyInfo />
+          <FooterLinks />
+        </div>
+        
+        <Separator className="bg-cyan-500/30 mb-8" />
+        
+        <FooterBottom handleExternalLink={handleExternalLink} />
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

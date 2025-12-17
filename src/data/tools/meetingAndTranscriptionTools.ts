@@ -1,0 +1,213 @@
+
+import { Tool } from "@/types/tools";
+import { 
+  Mic, 
+  FileText, 
+  Users, 
+  Clock, 
+  Brain, 
+  Search, 
+  Video, 
+  MessageSquare,
+  Calendar,
+  Headphones,
+  Monitor,
+  BarChart3,
+  Target,
+  Zap
+} from "lucide-react";
+
+export const meetingAndTranscriptionTools: Tool[] = [
+  {
+    icon: Brain,
+    title: "SpeakAI",
+    description: "Gateway to turning language data into actionable insights without coding. Trusted by 100,000+ companies for transcription, analysis, and AI-driven content generation with high accuracy.",
+    emoji: "🎤",
+    color: "from-blue-500 to-purple-600",
+    directUrl: "https://speakai.co/?via=aiwebtoolss",
+    tags: ["transcription", "language analysis", "content generation", "no-code", "business insights"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.5,
+    totalVotes: 3456
+  },
+  {
+    icon: FileText,
+    title: "Otter.ai",
+    description: "Advanced AI-powered transcription and note-taking tool with real-time capabilities. Integrates with Zoom, Teams, Google Meet for automatic recording and summary generation.",
+    emoji: "🦦",
+    color: "from-green-500 to-blue-600",
+    directUrl: "https://otter.ai/",
+    tags: ["real-time transcription", "meeting notes", "collaboration", "integration", "automatic summaries"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.6,
+    totalVotes: 4567
+  },
+  {
+    icon: Zap,
+    title: "FireFlies AI",
+    description: "Indispensable tool for streamlining voice conversations, automating recording, transcribing, summarizing, and analyzing meetings. Used by 100,000+ organizations with AI-powered search.",
+    emoji: "🔥",
+    color: "from-orange-500 to-red-600",
+    directUrl: "https://fireflies.ai/?gr_pk=Orzo&gr_uid=lqX7",
+    tags: ["voice conversations", "meeting automation", "AI search", "collaboration", "workflow integration"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.4,
+    totalVotes: 3987
+  },
+  {
+    icon: Clock,
+    title: "Rewind.AI",
+    description: "Personalized AI assistant automatically capturing screen and audio in background. Stores recordings locally on Mac, ensuring privacy while providing perfect memory for productivity.",
+    emoji: "⏪",
+    color: "from-purple-500 to-blue-600",
+    directUrl: "https://www.rewind.ai/",
+    tags: ["screen recording", "privacy", "memory assistant", "Mac", "productivity"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.3,
+    totalVotes: 2876
+  },
+  {
+    icon: FileText,
+    title: "REV",
+    description: "Comprehensive transcription and speech-to-text services with human professionals at $1.50/minute and AI automation at $0.25/minute. Features Rev Max Subscription with premium accuracy.",
+    emoji: "📝",
+    color: "from-blue-500 to-green-600",
+    directUrl: "https://rev.pxf.io/c/4110048/1357141/16349",
+    tags: ["transcription services", "speech-to-text", "professional quality", "affordable pricing", "accuracy"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.5,
+    totalVotes: 3234
+  },
+  {
+    icon: Users,
+    title: "MeetGeek",
+    description: "Ultimate AI meeting assistant with automatic video recording, transcription, and summaries. Detects keywords, creates shareable highlights, and integrates with tool stacks.",
+    emoji: "🤝",
+    color: "from-green-500 to-blue-600",
+    directUrl: "https://get.meetgeek.ai/aiwebtools",
+    tags: ["meeting assistant", "video recording", "keyword detection", "team collaboration", "productivity"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.4,
+    totalVotes: 3567
+  },
+  {
+    icon: Video,
+    title: "TL;DV",
+    description: "Game-changing meeting management tool recording, transcribing, and summarizing Zoom and Google Meet calls. AI capabilities with 30+ language support and speaker detection.",
+    emoji: "📹",
+    color: "from-purple-500 to-pink-600",
+    directUrl: "https://tldv.cello.so/iq6MHPWb7Od",
+    tags: ["meeting management", "multilingual", "speaker detection", "clip sharing", "workflow automation"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.6,
+    totalVotes: 4123
+  },
+  {
+    icon: BarChart3,
+    title: "Traq.ai",
+    description: "Revolutionary sales team AI-powered conversation intelligence capturing and analyzing sales calls. Provides buyer insights, boosts win rates, and enhances sales efficiency.",
+    emoji: "📊",
+    color: "from-red-500 to-orange-600",
+    directUrl: "https://www.traq.ai/",
+    tags: ["sales intelligence", "conversation analysis", "buyer insights", "win rate optimization", "sales efficiency"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.3,
+    totalVotes: 2987
+  },
+  {
+    icon: Brain,
+    title: "Sembly.ai",
+    description: "Intelligent meeting assistant providing transcription, comprehensive notes, and valuable insights. High-accuracy with speaker identification, filler word removal, and task management.",
+    emoji: "🧠",
+    color: "from-blue-500 to-purple-600",
+    directUrl: "https://www.sembly.ai/",
+    tags: ["meeting intelligence", "transcription accuracy", "task management", "multilingual", "insights"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.4,
+    totalVotes: 3456
+  },
+  {
+    icon: Target,
+    title: "Cogram",
+    description: "AI-driven productivity tool enhancing team efficiency through automated meeting note-taking and task management. Custom instructions, follow-up drafting, and privacy-focused approach.",
+    emoji: "🎯",
+    color: "from-green-500 to-blue-600",
+    directUrl: "https://www.cogram.com/",
+    tags: ["productivity enhancement", "automated notes", "task management", "privacy focused", "team efficiency"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.2,
+    totalVotes: 2654
+  },
+  {
+    icon: Monitor,
+    title: "Read",
+    description: "AI-powered tool enhancing and streamlining meetings with automatic summaries, transcription with reactions, video playback with AI highlights, and Premium topic discovery features.",
+    emoji: "📖",
+    color: "from-purple-500 to-blue-600",
+    directUrl: "https://www.read.ai/",
+    tags: ["meeting enhancement", "AI highlights", "topic discovery", "video playback", "communication optimization"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.3,
+    totalVotes: 2876
+  },
+  {
+    icon: Video,
+    title: "Grain",
+    description: "AI-powered meeting recorder and note-taker that automatically captures, transcribes, and shares insights from customer conversations. Perfect for sales and customer success teams.",
+    emoji: "🌾",
+    color: "from-amber-500 to-orange-600",
+    directUrl: "https://grain.com/?via=aiwebtools",
+    tags: ["meeting recorder", "customer conversations", "sales insights", "transcription", "collaboration", "deal insights"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.5,
+    totalVotes: 3340
+  },
+  {
+    icon: MessageSquare,
+    title: "Tactiq",
+    description: "Real-time transcription for Google Meet, Zoom, and Teams. Get live meeting transcripts with AI-powered summaries and action items instantly.",
+    emoji: "💬",
+    color: "from-blue-500 to-cyan-600",
+    directUrl: "https://tactiq.io/?via=aiwebtools",
+    tags: ["real-time transcription", "live transcripts", "meeting summaries", "action items", "browser extension", "multi-platform"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.6,
+    totalVotes: 4230
+  },
+  {
+    icon: Headphones,
+    title: "Fathom",
+    description: "Free AI meeting assistant that records, transcribes, and summarizes your meetings. Focus on the conversation while Fathom takes perfect notes.",
+    emoji: "🎧",
+    color: "from-purple-500 to-pink-600",
+    directUrl: "https://fathom.video/?via=aiwebtools",
+    tags: ["free meeting assistant", "automatic notes", "meeting summaries", "transcription", "focus tool", "productivity"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.7,
+    totalVotes: 5120
+  },
+  {
+    icon: Mic,
+    title: "Krisp",
+    description: "AI-powered noise cancellation for crystal-clear online meetings. Remove background noise, echo, and room noise from both sides of the conversation.",
+    emoji: "🔇",
+    color: "from-indigo-500 to-purple-600",
+    directUrl: "https://krisp.ai/?via=aiwebtools",
+    tags: ["noise cancellation", "audio quality", "background noise", "meeting quality", "AI audio", "clarity"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.8,
+    totalVotes: 6780
+  },
+  {
+    icon: Brain,
+    title: "Avoma",
+    description: "AI meeting assistant and revenue intelligence platform. Automatic recording, transcription, summarization, and analysis for customer-facing teams.",
+    emoji: "🚀",
+    color: "from-green-500 to-teal-600",
+    directUrl: "https://www.avoma.com/?via=aiwebtools",
+    tags: ["revenue intelligence", "customer meetings", "sales enablement", "meeting analysis", "conversation intelligence", "CRM integration"],
+    category: "Meeting & Transcription Tools",
+    rating: 4.5,
+    totalVotes: 3890
+  }
+];

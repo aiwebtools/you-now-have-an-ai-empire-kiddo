@@ -1,0 +1,153 @@
+
+import { Tool } from "@/types/tools";
+import { 
+  Code, 
+  Terminal, 
+  FileText, 
+  Database, 
+  Zap, 
+  Settings,
+  Bot,
+  Cpu,
+  Wand2,
+  Globe,
+  TestTube,
+  Rocket
+} from "lucide-react";
+
+export const developerAndCodingTools: Tool[] = [
+  {
+    icon: Globe,
+    title: "Lovable.dev - AI Web App Builder",
+    description: "Revolutionary AI-powered web application builder that creates full-stack React applications from natural language prompts. Build complete web apps with modern tech stack including React, TypeScript, and Tailwind CSS in minutes. Perfect for 'make an app' queries.",
+    emoji: "🌐",
+    color: "from-purple-500 to-pink-600",
+    directUrl: "https://lovable.dev/invite/48176b65-a300-48a8-895b-ee9a0ea517e6/?via=aiwebtools",
+    tags: ["No-Code/Low-Code", "Frontend", "AI web builder", "React", "TypeScript", "full-stack", "web development", "no-code", "lovable", "make an app", "create app", "build app", "app builder"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.9,
+    totalVotes: 6789
+  },
+  {
+    icon: Terminal,
+    title: "Cursor AI Coding Agent",
+    description: "Advanced AI-powered code editor enhancing developer productivity. Features intelligent autocompletion, error detection, debugging, and AI-driven suggestions for faster, smarter coding. Perfect for web development and app creation.",
+    emoji: "💻",
+    color: "from-green-500 to-blue-600",
+    directUrl: "https://www.cursor.com/?via=aiwebtools",
+    tags: ["IDE", "Code Assistant", "code editor", "AI coding", "autocompletion", "debugging", "productivity", "developer tools", "programming", "web development"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.7,
+    totalVotes: 5678
+  },
+  {
+    icon: FileText,
+    title: "Hugging Face GPT Prompt Library",
+    description: "Rich repository of hundreds of ChatGPT prompts for creativity and streamlined AI interactions. Treasure trove for developers, researchers, and writers. 100% free resource.",
+    emoji: "📚",
+    color: "from-yellow-500 to-orange-600",
+    directUrl: "https://huggingface.co/datasets/fka/awesome-chatgpt-prompts",
+    tags: ["API Tools", "prompts", "ChatGPT", "free", "developers", "researchers", "creativity", "Hugging Face"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.6,
+    totalVotes: 4567
+  },
+  {
+    icon: Settings,
+    title: "Engineering GPT AI Suite",
+    description: "ENGINEERING GPTs by AiWebTools.Ai is a cutting-edge suite of AI-powered tools designed to provide expert-level support across a wide range of engineering disciplines, including Electrical, Mechanical, Civil, and Software Engineering. These tools deliver comprehensive assistance by offering detailed calculations, design recommendations, optimization strategies, and safety protocols tailored to your specific project needs.",
+    emoji: "⚙️",
+    color: "from-blue-500 to-green-600",
+    directUrl: "https://engineeringgpt.lovable.app/?via=aiwebtools",
+    videoUrl: "https://youtu.be/kDyI8A2xBe8?si=17__oTLSE7HbbApB",
+    imageUrl: "/lovable-uploads/d96aa982-9238-415c-b8ae-c2f4b91d5392.png",
+    tags: ["Backend", "engineering", "calculations", "design", "optimization", "safety protocols", "technical support", "web development", "software engineering"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.8,
+    totalVotes: 4200
+  },
+  {
+    icon: TestTube,
+    title: "TestSprite Website End-to-End Tester",
+    description: "Comprehensive AI-powered website testing platform for end-to-end testing automation. Perform complete website functionality testing, user journey validation, and quality assurance with intelligent test generation and execution capabilities.",
+    emoji: "🧪",
+    color: "from-cyan-500 to-blue-600",
+    directUrl: "https://www.testsprite.com/?via=aiwebtools",
+    tags: ["Testing", "website testing", "end-to-end testing", "test automation", "quality assurance", "web testing", "user journey testing", "functional testing", "QA tools"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.6,
+    totalVotes: 2890
+  },
+  {
+    icon: Rocket,
+    title: "Launch.Today AI Vibe Coding Agent",
+    description: "Launch.Today is an AI-powered vibe coding agent—similar to Lovable.dev—that turns ideas into production-ready web and mobile apps from natural language. Bring your product to life fast with agentic building, iterative edits, and seamless deployments.",
+    emoji: "🚀",
+    color: "from-indigo-500 to-cyan-600",
+    directUrl: "https://app.launch.today/?via=aiwebtools",
+    tags: ["No-Code/Low-Code", "Code Assistant", "vibe coding", "AI web builder", "agent", "app builder", "no-code", "low-code", "full-stack", "development", "launch today", "lovable"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.6,
+    totalVotes: 2450
+  },
+  {
+    icon: Bot,
+    title: "Devin AI Software Engineer",
+    description: "Devin is an autonomous AI software engineer that plans, writes, and runs code to build real software end-to-end. It reasons through tasks, creates PRs, fixes bugs, and ships features like a real dev.",
+    emoji: "🤖",
+    color: "from-violet-500 to-fuchsia-600",
+    directUrl: "https://devin.ai/?via=aiwebtools",
+    tags: ["Code Assistant", "Coding Agent", "devin", "ai coding", "software engineer", "autonomous agent", "developer tools", "code", "programming", "build app"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.7,
+    totalVotes: 3120
+  },
+  {
+    icon: Cpu,
+    title: "Base44 AI Agent",
+    description: "Base44 is a vibe coding AI agent similar to Lovable.dev—turn ideas into production-ready apps fast with agentic building and iterative edits.",
+    emoji: "🧠",
+    color: "from-teal-500 to-emerald-600",
+    directUrl: "https://base44.com/?via=aiwebtools",
+    tags: ["No-Code/Low-Code", "Code Assistant", "Coding Agent", "vibe coding", "AI web builder", "agent", "app builder", "no-code", "low-code", "full-stack", "development", "base44"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.5,
+    totalVotes: 1200
+  },
+  {
+    icon: Wand2,
+    title: "iPhone App Maker AI Agent",
+    description: "AppChef is a vibe coding AI agent for building iPhone apps fast—similar to Lovable.dev. Turn ideas into production-ready iOS apps with agentic building.",
+    emoji: "📱",
+    color: "from-sky-500 to-blue-600",
+    directUrl: "https://appchef.ai/?via=aiwebtools",
+    tags: ["Mobile Development", "No-Code/Low-Code", "Coding Agent", "vibe coding", "AI web builder", "agent", "app builder", "mobile", "iOS", "iPhone", "AppChef", "low-code", "full-stack", "development"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.6,
+    totalVotes: 1800
+  },
+  {
+    icon: Code,
+    title: "CLINE.BOT Open Source AI Coding Agent",
+    description: "CLINE.BOT is an open-source AI coding agent you can download and run locally. It plans, writes, and iterates on code with agentic workflows—perfect for developers who want full control.",
+    emoji: "🧩",
+    color: "from-zinc-500 to-slate-600",
+    directUrl: "https://cline.bot/?via=aiwebtools",
+    tags: ["Code Assistant", "Coding Agent", "vibe coding", "AI coding", "open source", "downloadable", "agent", "developer tools", "programming", "automation"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.6,
+    totalVotes: 1600
+  },
+  {
+    icon: Zap,
+    title: "Usemotion AI Employees Builder",
+    description: "Usemotion (Motion) helps you build AI-powered workflows and assistants that operate like autonomous employees—planning, prioritizing, and executing tasks to accelerate your team.",
+    emoji: "⚡",
+    color: "from-amber-500 to-orange-600",
+    directUrl: "https://usemotion.com/?via=aiwebtools",
+    tags: ["DevOps", "Automation Agent", "AI employees", "automation", "productivity", "task management", "project management", "workflow", "scheduler", "teams", "agent"],
+    category: "DEVELOPMENT & CODING",
+    rating: 4.5,
+    totalVotes: 2200
+  }
+];

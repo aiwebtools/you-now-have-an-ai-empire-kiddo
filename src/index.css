@@ -1,0 +1,82 @@
+
+@import url("./styles/base.css");
+@import url("./styles/components.css");
+@import url("./styles/animations.css");
+@import url("./styles/background-effects.css");
+@import url("./styles/timeEffects.css");
+@import url("./styles/mobile-optimizations.css");
+@import url("./styles/glow-animations.css");
+@import url("./styles/neon-effects.css");
+@import url("./styles/cross-browser.css");
+@import url("./styles/matrix-effects.css");
+@import url("./styles/chromebook-optimizations.css");
+@import url("./styles/performance.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Matrix rain loading animation - must be in global CSS for cross-browser */
+@keyframes matrixFall {
+  0% { 
+    transform: translateY(-100%); 
+    opacity: 1;
+  }
+  100% { 
+    transform: translateY(100vh); 
+    opacity: 0.3;
+  }
+}
+
+.matrix-rain-column {
+  animation: matrixFall 3s linear infinite;
+}
+
+/* Custom Scrollbar - Extra thick for accessibility */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsl(280 70% 50%), hsl(200 80% 50%));
+  border-radius: 10px;
+  border: 3px solid hsl(var(--background));
+  min-height: 80px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, hsl(280 80% 60%), hsl(200 90% 60%));
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: hsl(280 70% 50%) hsl(var(--background));
+}
+
+/* Critical mobile fixes */
+@media (max-width: 768px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
+  }
+  
+  /* Prevent zoom and orientation issues */
+  input, textarea, select {
+    font-size: 16px !important;
+    transform: translateZ(0);
+  }
+}

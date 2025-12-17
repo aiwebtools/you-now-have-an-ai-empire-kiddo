@@ -1,0 +1,123 @@
+
+import { Home, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { createTimePortalEffect } from "@/utils/timeEffects";
+
+const Logo = ({ compact = false }: { compact?: boolean }) => {
+  const navigate = useNavigate();
+
+  const scrollToHome = () => {
+    // Make Home feel INSTANT: no slow smooth scroll
+    if (window.location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    } else {
+      navigate('/');
+      // Ensure we jump to top right after navigation
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      }, 0);
+    }
+  };
+
+  const handleExternalLink = (url: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('🌀 External link clicked in header:', url);
+    createTimePortalEffect(url);
+  };
+
+  return (
+    <div className={`flex items-center gap-2 md:gap-3 flex-shrink min-w-0 relative z-[110] ${compact ? 'scale-90' : ''}`}>
+      <div className="text-left flex-1 min-w-0 overflow-hidden">
+        {/* Main title row */}
+        <div className={`flex items-center gap-1 md:gap-2 ${compact ? 'mb-0' : 'mb-0.5 md:mb-1'}`}>
+          <div className={`font-bold ${compact ? 'text-sm' : 'text-sm sm:text-lg md:text-xl'} tracking-wider letter-spacing-wide relative truncate`}>
+            <span className="relative z-10 bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 bg-clip-text text-transparent logo-text-crisp">AI WEB TOOLS</span>
+            <span className="relative z-10 bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 bg-clip-text text-transparent logo-text-crisp hidden sm:inline"> - AITOOLS.STUDIO</span>
+          </div>
+          {!compact && (
+            <span className="text-xs text-cyan-200/80 font-medium hidden lg:block tracking-wide">
+              AN AI TOOLS DIRECTORY
+            </span>
+          )}
+        </div>
+        
+        {/* Mobile-visible branding info */}
+        <div className={`${compact ? 'text-[8px]' : 'text-[9px] sm:text-[10px] md:text-xs'} text-cyan-200/70 -mt-0.5`}>
+          <span className="font-light tracking-wide">AN AI TOOLS COMPANY</span>
+        </div>
+        
+        {/* AIWebTools.ai link - always visible */}
+        <div className={`${compact ? 'text-[8px]' : 'text-[9px] sm:text-[10px] md:text-xs'} text-gray-400 mt-0`}>
+          BY{" "}
+          <button 
+            onClick={(e) => handleExternalLink("https://www.aiwebtools.ai", e)}
+            className="text-cyan-400 hover:text-cyan-300 transition-all duration-200 hover:text-shadow-glow font-medium tracking-wide"
+          >
+            AIWEBTOOLS.AI
+          </button>
+        </div>
+        
+        {/* AITOOLS.STUDIO on mobile only */}
+        <div className="text-[8px] text-cyan-300/60 mt-0 sm:hidden">
+          AITOOLS.STUDIO
+        </div>
+      </div>
+      
+      {/* Redesigned Home Button - Sleek circular design with glow */}
+      <button
+        onClick={scrollToHome}
+        className={`
+          group relative flex-shrink-0 
+          ${compact ? 'w-10 h-10' : 'w-11 h-11 md:w-14 md:h-14'} 
+          rounded-full 
+          bg-gradient-to-br from-cyan-500/20 via-blue-600/30 to-purple-600/20
+          border border-cyan-400/50
+          hover:border-cyan-300
+          transition-all duration-300 
+          hover:scale-110
+          flex items-center justify-center
+          overflow-hidden
+          shadow-[0_0_20px_rgba(6,182,212,0.3)]
+          hover:shadow-[0_0_30px_rgba(6,182,212,0.5),0_0_60px_rgba(6,182,212,0.2)]
+        `}
+        title="Go to Home"
+        aria-label="Home"
+      >
+        {/* Animated background ring */}
+        <div className="absolute inset-0 rounded-full border-2 border-cyan-400/30 animate-pulse" />
+        
+        {/* Inner glow effect */}
+        <div className="absolute inset-1 rounded-full bg-gradient-to-br from-cyan-500/10 to-transparent" />
+        
+        {/* Rotating accent ring (subtle) */}
+        <div 
+          className="absolute inset-0 rounded-full border border-cyan-300/20 group-hover:border-cyan-300/40 transition-colors"
+          style={{
+            background: 'conic-gradient(from 0deg, transparent, rgba(6,182,212,0.1), transparent, rgba(6,182,212,0.1), transparent)'
+          }}
+        />
+        
+        {/* Home Icon */}
+        <Home 
+          className={`
+            ${compact ? 'w-5 h-5' : 'w-5 h-5 md:w-7 md:h-7'} 
+            text-cyan-300 
+            drop-shadow-[0_0_8px_rgba(6,182,212,0.8)]
+            group-hover:text-white
+            group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)]
+            transition-all duration-300
+            relative z-10
+          `} 
+        />
+        
+        {/* Sparkle accent on hover */}
+        <Sparkles 
+          className="absolute top-1 right-1 w-3 h-3 text-cyan-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" 
+        />
+      </button>
+    </div>
+  );
+};
+
+export default Logo;
