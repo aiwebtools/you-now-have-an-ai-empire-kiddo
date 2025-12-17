@@ -376,7 +376,7 @@ const featuredGPTsUnsorted = [
     color: "from-red-600 to-gray-600",
     features: ["Crime Analysis", "Evidence Review", "Investigation Support", "Forensic Insights"],
     directUrl: "https://criminologistgpt.lovable.app/?via=aiwebtools",
-    videoUrl: "https://youtu.be/3Ll7KPhTt3M",
+    videoUrl: "https://youtu.be/Rvol3zoSguM",
     emoji: "🔍"
   },
   {
@@ -436,7 +436,7 @@ const featuredGPTsUnsorted = [
     color: "from-red-500 to-orange-600",
     features: ["Wildfire Management", "Predictive Analytics", "Fire Strategy", "Safety Guidance"],
     directUrl: "https://firefightergpt.lovable.app/?via=aiwebtools",
-    videoUrl: "https://www.youtube.com/watch?v=lGsefWkYfq0",
+    videoUrl: "https://youtu.be/kDu2SSP9Glw",
     emoji: "🚒"
   },
   {
@@ -736,7 +736,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-600 to-indigo-600",
     features: ["Testimony Writing", "Legislative Support", "Public Engagement", "Policy Advocacy"],
     directUrl: "https://publictestimonywriter.lovable.app/?via=aiwebtools",
-    videoUrl: "https://www.youtube.com/watch?v=-q1oyZZFcI4",
+    videoUrl: "https://youtu.be/SmDYlyA_DUI",
     emoji: "📝"
   },
   {
@@ -1056,7 +1056,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-500 to-green-600",
     features: ["Truth Seeking", "Probability Analysis", "Claim Verification", "Data-Driven"],
     directUrl: "https://probabilitygpt.lovable.app/?via=aiwebtools",
-    imageUrl: "https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-captivating-and-futuristic-scene-featuring-a.png/:/cr=t:11.11%25,l:0%25,w:100%25,h:88.89%25/rs=w:1200,h:600,cg:true",
+    videoUrl: "https://youtu.be/Ff3kJkGK6jY",
     emoji: "⚖️"
   },
   {
@@ -1066,7 +1066,7 @@ const featuredGPTsUnsorted = [
     color: "from-green-500 to-blue-600",
     features: ["Property Data", "Market Value", "Geocoordinates", "Property Insights"],
     directUrl: "https://propertydatafindergpt.lovable.app/?via=aiwebtools",
-    videoUrl: "https://www.youtube.com/watch?v=0ZGBGn9yYwY",
+    videoUrl: "https://youtu.be/J4497wCueJY",
     emoji: "🏠"
   },
   {
@@ -1076,7 +1076,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-600 to-gray-700",
     features: ["Legal Research", "Document Drafting", "Evidence Analysis", "Defense Support"],
     directUrl: "https://publicdefendergpt.lovable.app/?via=aiwebtools",
-    videoUrl: "https://www.youtube.com/watch?v=cQR5eFjsPWw",
+    videoUrl: "https://youtu.be/IYi4mYtDIVA",
     emoji: "⚖️"
   },
   {
@@ -1396,7 +1396,7 @@ const featuredGPTsUnsorted = [
     color: "from-green-500 to-emerald-600",
     features: ["Off-Grid Living", "Sustainability", "Permaculture", "Resilience"],
     directUrl: "https://chatgpt.com/g/g-6931bd31b0208191a0ebd290977b8e4a-self-sufficiency-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/self-sufficiency-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/vQFYmeWn1OA",
     emoji: "🌱"
   },
   {
@@ -1476,7 +1476,7 @@ const featuredGPTsUnsorted = [
     color: "from-yellow-500 to-orange-600",
     features: ["Aten", "Monotheism", "Egyptian Wisdom", "Sun Worship"],
     directUrl: "https://chatgpt.com/g/g-6924b341a8c481918bafaafee5ef1e0a-akhenaten/?via=aiwebtools",
-    imageUrl: "/src/assets/akhenaten-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/aBBBQL-thA0",
     emoji: "☀️"
   },
   {
@@ -1556,7 +1556,7 @@ const featuredGPTsUnsorted = [
     color: "from-purple-500 to-pink-600",
     features: ["Interior Castle", "Contemplative Prayer", "Divine Union", "Carmelite"],
     directUrl: "https://chatgpt.com/g/g-6924eee640048191af450da5d2cb57fc-saint-teresa-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/saint-teresa-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/w_QzTqrzo8s",
     emoji: "🏰"
   },
   {
@@ -1666,7 +1666,7 @@ const featuredGPTsUnsorted = [
     color: "from-purple-500 to-blue-600",
     features: ["Logos", "Cosmic Christ", "Alexandrian School", "Universal Salvation"],
     directUrl: "https://chatgpt.com/g/g-6924e70c9a3481919307be73772e1252-origen-reborn-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/origen-reborn-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/RCgXYCkf1DM",
     emoji: "✨"
   },
   {
@@ -1686,7 +1686,7 @@ const featuredGPTsUnsorted = [
     color: "from-amber-500 to-orange-600",
     features: ["Logic", "Ethics", "Metaphysics", "Natural Philosophy"],
     directUrl: "https://chatgpt.com/g/g-6924aec892ec8191b86d694563ac38e1-aristotle-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/aristotle-reborn-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/0sKyD9fV4sU",
     emoji: "📚"
   },
   {
@@ -2276,7 +2276,7 @@ const featuredGPTsUnsorted = [
     color: "from-indigo-500 to-purple-600",
     features: ["Pattern Analysis", "Reality Decoding", "Hidden Connections", "Critical Thinking"],
     directUrl: "https://chatgpt.com/g/g-68c1e9e3b488819193744edfeecf7997-world-reality-decoder-gpt",
-    videoUrl: "https://youtu.be/lGck2bUVFDU",
+    videoUrl: "https://youtu.be/mMs5F8TK64Y",
     emoji: "🔍"
   },
   {
