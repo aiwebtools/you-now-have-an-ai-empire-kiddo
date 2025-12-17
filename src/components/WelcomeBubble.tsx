@@ -77,6 +77,18 @@ const WelcomeBubble = () => {
         >
           Start Exploring →
         </Button>
+        
+        <p className="text-center text-xs text-green-400/60">
+          Powered by{' '}
+          <a 
+            href="https://aiwebtools.ai" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-green-400 hover:text-green-300 underline underline-offset-2 transition-colors"
+          >
+            aiwebtools.ai
+          </a>
+        </p>
       </DialogContent>
     </Dialog>
   );
