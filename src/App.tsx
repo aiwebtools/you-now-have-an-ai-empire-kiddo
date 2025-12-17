@@ -36,6 +36,7 @@ const GamingEntertainmentPage = lazy(() => import("./pages/GamingEntertainmentPa
 
 // Lazy load non-critical components
 const FloatingCloneButton = lazy(() => import("./components/FloatingCloneButton"));
+const WelcomeBubble = lazy(() => import("./components/WelcomeBubble"));
 
 // Welcome Neo voice - plays when user lands on main site after accepting disclaimer
 const WelcomeNeoVoice = () => {
@@ -170,6 +171,10 @@ function App() {
                 {/* Tiny floating clone button - hides on scroll */}
                 <Suspense fallback={null}>
                   <FloatingCloneButton />
+                </Suspense>
+                {/* Welcome bubble for first-time users */}
+                <Suspense fallback={null}>
+                  <WelcomeBubble />
                 </Suspense>
               </BrowserRouter>
             </TooltipProvider>
