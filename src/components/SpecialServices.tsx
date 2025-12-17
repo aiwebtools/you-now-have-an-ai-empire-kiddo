@@ -1346,7 +1346,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-500 to-cyan-600",
     features: ["Water Deity", "Divine Feminine", "Healing", "Ancestral Wisdom"],
     directUrl: "https://chatgpt.com/g/g-6931ac78db408191a54b3f5729d6e600-yemaya-ancient-african-mother-of-the-waters/?via=aiwebtools",
-    imageUrl: "/src/assets/yemaya-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/tOmfBBnLb18",
     emoji: "🌊"
   },
   {
@@ -2006,7 +2006,7 @@ const featuredGPTsUnsorted = [
     color: "from-purple-500 to-pink-600",
     features: ["Podcast Scripts", "Episode Outlines", "Audio Storytelling", "Content Structure"],
     directUrl: "https://podcastwritergpt.lovable.app/?via=aiwebtools",
-    imageUrl: "https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-illustration-of-a-podcast-host-with-a_HnlUN.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:600,h:300,cg:true/qt=q:30",
+    videoUrl: "https://youtu.be/NRAvHxHIj-U",
     emoji: "🎙️"
   },
   {
@@ -2036,7 +2036,7 @@ const featuredGPTsUnsorted = [
     color: "from-cyan-500 to-purple-600",
     features: ["GPT Ideas", "AI Brainstorming", "Tool Concepts", "Instructions Generator"],
     directUrl: "https://customgptmaker.lovable.app/?via=aiwebtools",
-    imageUrl: "https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/1000002880.jpg/:/cr=t:22.21%25,l:0%25,w:100%25,h:55.58%25/rs=w:600,h:451,cg:true/qt=q:98",
+    videoUrl: "https://youtu.be/XSZM8ePQOzY",
     emoji: "💡"
   },
   {
@@ -2096,7 +2096,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-500 to-green-600",
     features: ["Credit Scoring", "Risk Assessment", "Financial Analysis", "Lending"],
     directUrl: "https://predictivecreditscoregpt.lovable.app/?via=aiwebtools",
-    imageUrl: "https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-screenshot-of-a-web-app-with-the-text-predic.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1200,cg:true",
+    videoUrl: "https://youtu.be/_cuC9HUVy4M",
     emoji: "📊"
   },
   {
@@ -2236,7 +2236,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-600 to-cyan-700",
     features: ["Atlantis", "Ancient Knowledge", "Lost Civilization", "Hidden Truths"],
     directUrl: "https://chatgpt.com/g/g-68b496eea38481919c1700ed3ef675dd-atlantean-memory-keeper/?via=aiwebtools",
-    imageUrl: "/src/assets/atlantean-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/vBm6l_6JqEg",
     emoji: "🏛️"
   },
   {
@@ -2396,7 +2396,7 @@ const featuredGPTsUnsorted = [
     color: "from-purple-500 to-blue-600",
     features: ["Data Analysis", "Global Data", "Predictions", "Research"],
     directUrl: "https://chatgpt.com/g/g-68f8eda5982c8191bef047399d91a056-world-data-explorer-gpt",
-    imageUrl: "/src/assets/world-data-explorer-hero.jpg",
+    videoUrl: "https://youtu.be/vEEhdr-SLJY",
     emoji: "🌍"
   },
   {
@@ -2556,7 +2556,7 @@ const featuredGPTsUnsorted = [
     color: "from-amber-500 to-orange-600",
     features: ["Culinary Arts", "Recipe Assistant", "Meal Planning", "Kitchen Companion"],
     directUrl: "https://chatgpt.com/g/g-689239ba1cb0819197ae06454a25cee5-culinary-master-gpt",
-    imageUrl: "/src/assets/culinary-master-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/YuLDWrZmRhc",
     emoji: "🍳"
   },
   {
@@ -2596,7 +2596,7 @@ const featuredGPTsUnsorted = [
     color: "from-yellow-500 to-orange-600",
     features: ["Religious Analysis", "Mythology", "Celestial Symbolism", "Ancient Wisdom"],
     directUrl: "https://chatgpt.com/g/g-68bd849122b48191963171690f999952-astrotheology-revealer-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/astrotheology-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/zVFwglhh4hk",
     emoji: "🌟"
   },
   {
@@ -2716,7 +2716,7 @@ const featuredGPTsUnsorted = [
     color: "from-yellow-400 to-green-500",
     features: ["Self-Esteem", "Confidence", "Affirmations", "Self-Worth"],
     directUrl: "https://chat.openai.com/g/g-68afa7de4eb481919e890a26b4655b49-self-esteem-booster",
-    imageUrl: "/src/assets/self-esteem-booster-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/X5TlIueFcko",
     emoji: "⭐"
   },
   {
@@ -2846,7 +2846,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-500 to-green-600",
     features: ["Patient Advocacy", "Healthcare Navigation", "Patient Rights", "Medical Billing"],
     directUrl: "https://chatgpt.com/g/g-68cf22ea994481919206bf9eb0abccbc-patients-advocate-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/patient-advocate-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/S51kPQl19kA",
     emoji: "🛡️"
   },
   {
@@ -2856,7 +2856,7 @@ const featuredGPTsUnsorted = [
     color: "from-green-500 to-teal-600",
     features: ["Parenting", "Child Development", "Family Guidance", "Psychology"],
     directUrl: "https://chatgpt.com/g/g-68d4c45f3bc48191ba4a330a3b48bc87-parenting-guide-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/parenting-guide-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/HfT-9XqDNeU",
     emoji: "👨‍👩‍👧‍👦"
   },
   {
@@ -2866,7 +2866,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-500 to-green-600",
     features: ["IEP Support", "Parent Advocacy", "School Meetings", "Educational Rights"],
     directUrl: "https://chatgpt.com/g/g-68bb75f48218819184ad7aa0198cb983-parent-teacher-advocate-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/parent-teacher-advocate-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/vUreBwGa1w4",
     emoji: "👨‍👩‍👧‍👦"
   },
   {
@@ -2876,7 +2876,7 @@ const featuredGPTsUnsorted = [
     color: "from-purple-500 to-blue-600",
     features: ["Public Services", "Government Resources", "Social Services", "Community Help"],
     directUrl: "https://chatgpt.com/g/g-68bb74c1de28819197b7cd6f944efce9-public-service-finder-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/public-service-finder-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/x4uk_awDYS4",
     emoji: "🏛️"
   },
   {
@@ -2896,7 +2896,7 @@ const featuredGPTsUnsorted = [
     color: "from-orange-500 to-yellow-600",
     features: ["Construction Planning", "Safety Compliance", "Project Management", "Building Codes"],
     directUrl: "https://chatgpt.com/g/g-Hmgy6x48R-construction-gpt/?via=aiwebtools",
-    imageUrl: "/src/assets/construction-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/2qbPJHuwByQ",
     emoji: "🏗️"
   },
   {
@@ -3077,7 +3077,7 @@ const featuredGPTsUnsorted = [
     color: "from-gray-500 to-blue-600",
     features: ["Declassified", "Government Files", "Transparency", "Research"],
     directUrl: "https://gemini.google.com/gem/52dfeb277b06",
-    imageUrl: "/src/assets/declassified-files-hero.jpg",
+    videoUrl: "https://youtu.be/1HYbBXOOd3s",
     emoji: "📄"
   },
   {
@@ -3118,7 +3118,7 @@ const featuredGPTsUnsorted = [
     color: "from-cyan-500 to-blue-600",
     features: ["Newsletter", "Email Marketing", "Content", "Writing"],
     directUrl: "https://chatgpt.com/g/g-67c1d3a4cb548191ad917dc301a69db0-newsletter-writer-gpt",
-    imageUrl: "/src/assets/newsletter-gpt-hero.jpg",
+    videoUrl: "https://youtu.be/Nc4KRfHPZhI",
     emoji: "📧"
   },
   {
@@ -3178,7 +3178,7 @@ const featuredGPTsUnsorted = [
     color: "from-blue-500 to-slate-600",
     features: ["Property Valuation", "Mortgage Analysis", "Rental Management", "Investment Analysis"],
     directUrl: "https://realestategpt.lovable.app/?via=aiwebtools",
-    imageUrl: "/src/assets/real-estate-inspector-hero.jpg",
+    videoUrl: "https://youtu.be/ULnIHexQO0w",
     emoji: "🏘️"
   },
   {
