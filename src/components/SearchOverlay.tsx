@@ -63,9 +63,9 @@ const SearchOverlay = ({ isOpen, onClose }: SearchOverlayProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 backdrop-blur-sm">
-      <div className="w-full max-w-4xl mx-4">
-        <Card className="bg-gray-900/95 border border-cyan-500/30 shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 backdrop-blur-sm bg-black/50" onClick={onClose}>
+      <div className="w-full max-w-4xl mx-4" onClick={(e) => e.stopPropagation()}>
+        <Card className="bg-gray-900/95 border border-cyan-500/30 shadow-2xl overflow-hidden">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-cyan-100">Search AI Tools</h2>
@@ -97,8 +97,14 @@ const SearchOverlay = ({ isOpen, onClose }: SearchOverlayProps) => {
             </div>
 
             <div 
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-cyan-500/50 scrollbar-track-gray-800"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-96 overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-thumb-cyan-500/50 scrollbar-track-gray-800"
               onScroll={handleScroll}
+              style={{ 
+                overscrollBehavior: 'contain',
+                WebkitOverflowScrolling: 'touch',
+                touchAction: 'pan-y',
+                overflowY: 'auto'
+              }}
             >
               {displayedResults.map((tool, index) => {
                 const toolIndex = allTools.findIndex(t => t.title === tool.title);
