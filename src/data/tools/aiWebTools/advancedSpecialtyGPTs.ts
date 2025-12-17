@@ -76,7 +76,7 @@ export const advancedSpecialtyGPTs: Tool[] = [
     emoji: "💰",
     color: "from-green-500 to-blue-600",
     directUrl: "https://ubigpt.lovable.app/?via=aiwebtools",
-    imageUrl: "https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-the-ai-tool-ubi-str_22t4n.png/:/rs=w:600,cg:true,m/qt=q:30",
+    videoUrl: "https://youtu.be/3XkLAnd1gjk",
     tags: ["universal basic income", "policy strategy", "economic planning", "future economics", "social policy", "Custom GPT"],
     category: "Advanced Specialty",
     rating: 4.6,
