@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -14,8 +14,7 @@ import { getCurrentToolCount } from "@/utils/toolCounter";
 import BookPromotionCard from "@/components/BookPromotionCard";
 import LazyFeaturedTools from "@/components/LazyFeaturedTools";
 import LazySearchPortal from "@/components/LazySearchPortal";
-import InteractiveMatrixBackground from "@/components/InteractiveMatrixBackground";
-import AnimatedBackground from "@/components/AnimatedBackground";
+const InteractiveMatrixBackground = lazy(() => import("@/components/InteractiveMatrixBackground"));
 import CloneOfferPopup from "@/components/CloneOfferPopup";
 import AIWebToolsSEOSection from "@/components/seo/AIWebToolsSEOSection";
 import DeferredMount from "@/components/DeferredMount";
@@ -93,10 +92,11 @@ const Index = () => {
         <GoogleRankingBooster pageType="homepage" />
       </DeferredMount>
       
-      {/* Background effects - deferred to improve initial paint */}
-      <DeferredMount delay={50}>
-        <InteractiveMatrixBackground />
-        <AnimatedBackground />
+      {/* Background effect - lazy loaded for faster initial paint */}
+      <DeferredMount delay={200}>
+        <Suspense fallback={null}>
+          <InteractiveMatrixBackground />
+        </Suspense>
       </DeferredMount>
       
       {/* Fixed Header - outside of relative container */}
@@ -159,16 +159,16 @@ const Index = () => {
         <AIWebToolsSEOSection />
    
         {/* Heavy sections are deferred so Home appears INSTANTLY on navigation */}
-        <DeferredMount delay={120} fallback={<LoadingSpinner />}>
+        <DeferredMount delay={50} fallback={<LoadingSpinner />}>
           {/* Featured Tools Section */}
           <LazyFeaturedTools onToolsLoaded={(count) => console.log(`Featured tools loaded: ${count}`)} />
         </DeferredMount>
         
-        <DeferredMount delay={180} fallback={null}>
+        <DeferredMount delay={100} fallback={null}>
           <BookPromotionCard />
         </DeferredMount>
         
-        <DeferredMount delay={220} fallback={null}>
+        <DeferredMount delay={150} fallback={null}>
           <SpecialServices />
         </DeferredMount>
         

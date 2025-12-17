@@ -3517,7 +3517,14 @@ const getOptimizedEmbedUrl = (videoUrl: string) => {
 const SpecialServices = () => {
   const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
+  const [visibleCount, setVisibleCount] = useState(24); // Start with 24 items for performance
   
+  const visibleGPTs = featuredGPTs.slice(0, visibleCount);
+  const hasMore = visibleCount < featuredGPTs.length;
+  
+  const loadMore = () => {
+    setVisibleCount(prev => Math.min(prev + 24, featuredGPTs.length));
+  };
   const handleLaunchGPT = (directUrl: string, title: string, e: React.MouseEvent) => {
     e.stopPropagation();
     createTimePortalEffect(directUrl, title);
@@ -3557,7 +3564,7 @@ const SpecialServices = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
-          {featuredGPTs.map((gpt, index) => (
+          {visibleGPTs.map((gpt, index) => (
             <Card 
               key={`${gpt.title}-${index}`}
               className="group relative overflow-hidden border-0 bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-md hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-1 cursor-pointer"
@@ -3647,6 +3654,19 @@ const SpecialServices = () => {
             </Card>
           ))}
         </div>
+        
+        {/* Load More Button */}
+        {hasMore && (
+          <div className="text-center mt-8">
+            <Button 
+              onClick={loadMore}
+              size="lg"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-bold px-8 py-3"
+            >
+              Load More GPTs ({featuredGPTs.length - visibleCount} remaining)
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );

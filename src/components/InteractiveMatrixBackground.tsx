@@ -25,6 +25,7 @@ const InteractiveMatrixBackground = () => {
   const dropsRef = useRef<MatrixDrop[]>([]);
   const interactionPointsRef = useRef<InteractionPoint[]>([]);
   const lastTimeRef = useRef<number>(0);
+  const isVisibleRef = useRef<boolean>(true);
   const { isMobile } = useMobile();
   const { performanceTier, addOptimizedEventListener } = useCrossBrowserOptimization();
 
@@ -153,6 +154,12 @@ const InteractiveMatrixBackground = () => {
   }, [isMobile, matrixChars]);
 
   const animate = useCallback((currentTime: number) => {
+    // Skip animation when tab is not visible
+    if (!isVisibleRef.current) {
+      animationFrameRef.current = requestAnimationFrame(animate);
+      return;
+    }
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -161,7 +168,7 @@ const InteractiveMatrixBackground = () => {
 
     // Simplified timing for better browser compatibility (especially Brave)
     const deltaTime = currentTime - lastTimeRef.current;
-    const targetInterval = performanceTier === 'high' ? 16.67 : performanceTier === 'medium' ? 22.22 : 33.33; // 60fps, 45fps, 30fps
+    const targetInterval = performanceTier === 'high' ? 16.67 : performanceTier === 'medium' ? 33.33 : 50; // 60fps, 30fps, 20fps
 
     // Use more consistent frame limiting that works better with Brave's optimizations
     if (deltaTime < targetInterval && lastTimeRef.current > 0) {
@@ -276,6 +283,12 @@ const InteractiveMatrixBackground = () => {
     initializeCanvas();
     initializeDrops();
 
+    // Visibility change handler to pause animation when tab is hidden
+    const handleVisibilityChange = () => {
+      isVisibleRef.current = document.visibilityState === 'visible';
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
     // Start animation
     animationFrameRef.current = requestAnimationFrame(animate);
 
@@ -317,6 +330,7 @@ const InteractiveMatrixBackground = () => {
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
       removeMouseMove?.();
       removeClick?.();
       removeTouchMove?.();
