@@ -1,4 +1,3 @@
-
 import { Tool } from "@/types/tools";
 import { 
   Clock, 
@@ -10,10 +9,26 @@ import {
   Ship,
   Users,
   BookOpen,
-  Search
+  Search,
+  Sparkles
 } from "lucide-react";
+import timeMachineUnwrittenHistoryImage from "@/assets/time-machine-unwritten-history.png";
 
 export const timeAndHistoryGPTs: Tool[] = [
+  {
+    icon: Sparkles,
+    title: "Time Machine of Unwritten History GPT",
+    description: "An unfiltered cosmic historian revealing lost truths through immersive time travel. This unique special version of Time Machine GPT focuses on revealing lost and hidden history of the world, unveiling the things that were lost through an immersive time travel adventure. Explore suppressed civilizations, forgotten knowledge, and mysteries erased from the historical record. By AiWebTools.Ai - Using GPT-4o.",
+    emoji: "🌌",
+    color: "from-purple-600 to-amber-500",
+    directUrl: "https://chatgpt.com/g/g-6942c94dcb08819191863b6d35161f09-time-machine-of-unwritten-history-gpt",
+    imageUrl: timeMachineUnwrittenHistoryImage,
+    tags: ["time travel", "hidden history", "lost civilizations", "unwritten history", "cosmic historian", "suppressed knowledge", "ancient mysteries", "time machine", "aiwebtools", "Custom GPT"],
+    category: "Time & History",
+    rating: 4.9,
+    totalVotes: 1250,
+    isFree: true
+  },
   {
     icon: Clock,
     title: "TIME MACHINE GPT",
